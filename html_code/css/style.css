@@ -675,6 +675,7 @@
 	
 		.wrapper.style1
 		{
+			padding:1em 0 1em 0;
 		}
 
 		.wrapper.style2
@@ -690,7 +691,7 @@
 	{
 		position: relative;
 		background-image: url('../images/header.jpg');
-		background-size: cover;
+		background-size: cover%;
 		background-position: center center;
 		background-attachment: fixed;
 		color: #fff;
@@ -701,7 +702,6 @@
 
 		.homepage #header
 		{
-			padding: 4em 0 4em 0;
 		}
 	
 			.homepage #header .overlay
@@ -1026,7 +1026,7 @@
 	{
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		padding: 4em 0 6em 0;
 		background: #2b252c;
 		color: #fff;
 	}
@@ -1221,3 +1221,19 @@
 			{
 				text-align: center;
 			}
+
+
+ /* Map */
+
+                 .map
+                 {
+                        position: fixed;
+			margin-left: auto;
+    			margin-right: auto;
+                        display: block;
+                        border: 0;
+                        outline: 0;
+			width:500px;
+			height:380px
+                 }
+
