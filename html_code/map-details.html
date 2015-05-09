@@ -19,7 +19,10 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/main.js"></script>
+		
 
+		<!--
 		<script>
 			function initialize() {
 				var mapProp = {
@@ -31,6 +34,8 @@
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
+		 -->
+		
 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -47,7 +52,7 @@
 				<!-- Inner -->
 					<div class="inner">
 						<header>
-							<h1><a href="index.html" id="logo">Ruta para campus: $....</a></h1>
+							<h1><a href="index.html" id="logo">Ruta para campus: <div id="campusTag"></div></a></h1>
 						</header>
 					</div>
 				
@@ -61,18 +66,18 @@
  									<li>
                                                                         <a href="">UAG - CU &hellip;</a>
                                                                                  <ul>
-                                                                                        <li><a href="map-details.html">Rectoria</a></li>
-                                                                                        <li><a href="map-details.html">Edif. de Ingenierias</a></li>
-                                                                                        <li><a href="map-details.html">Edif. de Negocios</a></li>
-                                                                                        <li><a href="map-details.html">Edif. de Ciencias</a></li>
-                                                                                        <li><a href="map-details.html">Estadio 3 de Mzo</a></li>
+                                                                                        <li><a onclick="doAction(1)">Rectoria</a></li>
+                                                                                        <li><a onclick="doAction(2)">Edif. de Ingenierias</a></li>
+                                                                                        <li><a onclick="doAction(3)">Edif. de Negocios</a></li>
+                                                                                        <li><a onclick="doAction(4)">Edif. de Ciencias</a></li>
+                                                                                        <li><a onclick="doAction(5)">Estadio 3 de Mzo</a></li>
 
                                                                                 </ul>
                                                                          </li>
-                                                                         <li><a href="map-details.html">Campus UNICO</a></li>
-                                                                         <li><a href="map-details.html">Campus ICB</a></li>
-                                                                         <li><a href="map-details.html">Campus Tepic</a></li>
-                                                                         <li><a href="map-details.html">Campus Tabasco</a></li>
+                                                                         <li><a onclick="doOuterAction(1)">Campus UNICO</a></li>
+                                                                         <li><a onclick="doOuterAction(2)">Campus ICB</a></li>
+                                                                         <li><a onclick="doOuterAction(3)">Campus Tepic</a></li>
+                                                                         <li><a onclick="doOuterAction(4)">Campus Tabasco</a></li>
                                                                  </ul>
                                                          </li>
                                                          <li><a href="about.html">Acerca de ...</a></li>
@@ -88,7 +93,7 @@
 							<div id="googleMap" class="map"> </div>					
 						</header>
 						<footer>
-							<a href="#" class="button">Imprime tu mapa</a>
+							<a href="#" class="button" onclick="window.print();return false;">Imprime tu mapa</a>
                         </footer>
 
 					</article>
